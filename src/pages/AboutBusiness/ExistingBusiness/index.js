@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {Row, Col, Button, Form, Input, Select } from 'antd';
 import style from './ExistingBusiness.module.less'
 import FrontHeader from '../../../components/FrontHeader';
@@ -32,9 +33,11 @@ const ExistingBusiness = () => {
                                     </Col>
                                     <Col  lg={5} xl={4} md={24} sm={24}>
                                             <Form.Item style={{paddingLeft:'25px'}}>
-                                                <Button className={style.btn}>
-                                                    Check
-                                                </Button>
+                                              
+                                                   <Button className={style.btn}>
+                                                        Check
+                                                   </Button>
+                                            
                                             </Form.Item>
                                     </Col>
                                     <Col lg={6} xl={7} md={24} sm={24}  >
@@ -62,9 +65,11 @@ const ExistingBusiness = () => {
                                 </Row>
                                 <Row>
                                     <Col lg={12} xl={12} md={12} sm={24} >
+                                        <Link to="/existbusinessinfo">
                                             <Button className={style.btn}>
                                                 Back
                                             </Button>
+                                        </Link> 
                                     </Col>
                                     <Col lg={12} xl={12} md={12} sm={24} >
                                             <Button className={style.btn} style={{float:'right'}} htmlType="submit">

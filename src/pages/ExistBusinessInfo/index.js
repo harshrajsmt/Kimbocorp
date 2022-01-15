@@ -11,8 +11,8 @@ const ExistBusinessInfo = () => {
         <>
             <FrontHeader/>
             <div className={style.container}>
-                <Row>
-                    <Col span={20} offset={2}>
+                <Row justify='center'>
+                    <Col span={20}>
                         <Row className={style.first_heading}>About your existing business</Row>
                         <Row ><h1>Is your business incorporated in Singapore?</h1></Row>
                         <Row>
@@ -28,9 +28,7 @@ const ExistBusinessInfo = () => {
                                         <h1 className={style.font} >Yes, it is incorporated in Singapore</h1>
                                     </Col>
                                 </Row>
-                                {/* <Row>
-                                    
-                                </Row> */}
+                               
                             </Col>
                             <Col xl={12} md={12} sm={24}>
                                 <Row className={style.containBox}>
@@ -45,9 +43,6 @@ const ExistBusinessInfo = () => {
                                         <h1 className={style.font} >No, it is not incorporated in Singapore</h1>
                                     </Col >
                                 </Row>
-                                {/* <Row>
-                                   
-                                </Row> */}
                             </Col>
                         </Row>
                     </Col>
